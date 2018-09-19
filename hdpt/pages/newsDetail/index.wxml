@@ -1,0 +1,8 @@
+<!--pages/newsDetail/index.wxml-->
+<import src="../../utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="line"></view>
+<view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>

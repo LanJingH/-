@@ -1,0 +1,12 @@
+<!--pages/companyPage/index.wxml-->
+<import src="../../wxParse/wxParse.wxml"/> 
+<import src="../../utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<view class="line"></view>
+<view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+<!-- 按钮 -->
+<view class="atttion-btn-view">
+	<button class="atttion-btn {{atttion?'bg':''}}" bindtap="atttionFocus">{{atttiontext}}</button>
+</view>

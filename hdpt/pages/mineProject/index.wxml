@@ -1,0 +1,20 @@
+<!--pages/mineProject/index.wxml-->
+<import src="../../utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<view class="line"></view>
+<view class="project-list">
+	 <block wx:for="{{projectList}}" wx:key="key">
+		<view class="project-item" bindtap='jumpPages' data-textid="{{item.code}}">
+			<view class="project-name"><text>{{item.name}}</text><text class="project-time">{{item.status}}</text></view>
+			<view class="person"><text decode="{{true}}" space="{{true}}" class="project-text2">联&nbsp;&nbsp;系&nbsp;&nbsp;人</text>：<text>{{item.person}}</text></view>
+			<view class="project-type"><text class="project-text">联系方式</text>：<text>{{item.tel}}</text></view>
+      <view class="project-type"><text class="project-text">发布时间</text>：<text>{{item.timer}}</text></view>
+		</view>
+	</block>
+</view>
+<view class="black-page {{attion?'bg_2':''}}">
+  <image src="../../images/no_data.png"></image>
+  <view><text>亲 暂无提交的项目呦~</text></view>
+</view>
+
+

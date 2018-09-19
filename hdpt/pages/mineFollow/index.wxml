@@ -1,0 +1,8 @@
+<!--pages/mineFollow/index.wxml-->
+<view class="line"></view>
+<block wx:for="{{followList}}" wx:key="key">
+	<view class="user-list" bindtap="jumpPage" data-textname="{{item}}">
+		 <view class="user-item1"><text class="list-text">{{item}}</text></view>
+		 <view class="user-item2"><image src="../../images/arrow_right.png" class="list-arrow"></image></view>
+	</view>
+</block>

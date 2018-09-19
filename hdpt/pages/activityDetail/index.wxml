@@ -1,0 +1,26 @@
+<!--pages/activityDetail/index.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+<import src="../../utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<view class="act">
+	<view class="actImg"><image src="{{img}}"></image></view>
+	<view class="act-title"><text class="title-header">{{name}}</text><text class="title-more {{titleMore?'bg_1':''}}">{{status}}</text></view>
+	<view class="act-pp"><label><text class='act-ppp'>主办单位</text>：<text>{{sponsor}}</text></label></view>
+	<view class="act-pp"><label><text decode="{{true}}" space="{{true}}" class='act-ppp2'>联&nbsp;&nbsp;系&nbsp;&nbsp;人</text>：<text>{{person}}</text></label></view>
+	<view class="act-pp"><label><text class='act-ppp'>联系电话</text>：<text>{{tel}}</text></label></view>
+	<view class="act-pp"><label><text class='act-ppp'>报名截止</text>：<text>{{lastDate}}</text></label></view>
+	<view class="act-pp"><label><text class='act-ppp'>活动时间</text>：<text>{{dates}}</text></label></view>
+	<view class="act-pp"><label><text class='act-ppp'>活动地点</text>：<text>{{adress}}</text></label></view>
+  	<view class="act-line"></view>
+	<view class="act-title2"><text>活动详情：</text></view>
+	<view class="wxParse">
+	    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+	</view>
+	<view class="atttion-btn-view">
+		<button class="atttion-btn {{atttion?'bg':''}}"  disabled='{{disabled}}'  bindtap="listenerButton">{{atttiontext}}</button>
+	</view>
+	<!--弹出框-->
+	<modal hidden="{{hiddenModal}}" confirm-text="确定" cancel-text="取消"  bindconfirm="listenerConfirm" bindcancel="listenerCancel"  >是否确定报名该活动？</modal>
+
+     
+</view>

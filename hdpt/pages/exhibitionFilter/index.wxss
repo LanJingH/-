@@ -1,0 +1,63 @@
+/* pages/exhibitionFilter/index.wxss */
+@import "../../style/style.wxss";
+page{
+  font-size:24rpx;
+  line-height: 1;
+  color:#333;
+}
+.con{
+  padding-left:30rpx;
+}
+.filter-title{
+  font-size:28rpx;
+  margin-top:30rpx;
+  margin-bottom:10rpx;
+}
+.filter-title2{
+  font-size:28rpx;
+  margin-top:50rpx;
+  margin-bottom:10rpx;
+}
+.filter-list{
+  overflow: hidden;
+}
+.filter-box{
+  background:#f7f7f7;
+   float:left;
+   width:218rpx;
+   height:58rpx;
+   line-height:62rpx;
+   text-align:center;
+   margin-top:20rpx;
+   margin-right:12rpx;
+   border:2rpx solid #f7f7f7;
+   border-radius:8px;
+}
+.bg{
+  border-color:#1674bb!important;
+}
+.atttion-btn-view{
+  position: fixed;
+  bottom:0;
+  width:100%;
+  border-top:1px solid #e8e8e8;
+  display:flex;
+}
+.atttion-btn-view button{
+  flex:1;
+  font-size:34rpx;
+}
+button{
+ background:#fff;
+ border-radius:0;
+}
+.button-hover {
+  background-color: #fff;
+}
+button::after {
+  border: 0;
+}
+.confirm-btn{
+  color:#fff;
+  background:#1674bb;
+}

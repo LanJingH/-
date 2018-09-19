@@ -1,0 +1,6 @@
+/* pages/newsDetail/index.wxss */
+@import "../../wxParse/wxParse.wxss";
+@import "../../style/style.wxss";
+.wxParse{
+  margin:0 30rpx;
+}

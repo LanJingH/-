@@ -1,0 +1,17 @@
+<!--pages/activity/index.wxml-->
+<import src="../../utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<view class="line"></view>
+<view class='activity'>
+	<block wx:for="{{activitydata}}" wx:key="key">
+	  <view class="activity-item" bindtap='jumpPages' data-textid="{{item.code}}">
+	      <view><image class="activityImg" src="{{item.activityimg}}"></image></view>
+	      <view class="app3">
+	          <view class="activity-big"><text>{{item.title}}</text></view>
+	          <view class="activity-small app1"><label>活动状态 : <text class="bg">{{item.richTitle}}</text></label></view>
+	          <view class="activity-small app"><label>活动时间 : <text>{{item.description}}</text></label></view>
+	      </view>
+	  </view>
+	</block>
+</view>
+

@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/index/index",
+    "pages/exhibitionFilter/index",
+    "pages/exhibitionSearch/index",
+    "pages/exhibition/index",
+    "pages/msg/index",
+    "pages/membershipService/index",
+    "pages/user/index",
+    "pages/IntegralRecord/index",
+    "pages/publish/index",
+    "pages/newsDetail/index",
+    "pages/projectDetail/index",
+    "pages/projectList/index",
+    "pages/activity/index",
+    "pages/activityDetail/index",
+    "pages/news/index",
+    "pages/companyPage/index",
+    "pages/logs/logs",
+    "pages/membershipServiceMenu/index",
+    "pages/mineProject/index",
+    "pages/mineProjectDetail/index",
+    "pages/mineFollow/index",
+    "pages/mineFollowProject/index",
+    "pages/mineFollowCompany/index",
+    "pages/login2/index",
+    "pages/mineActivity/index",
+    "pages/union/index",
+    "pages/dynamics/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#1674bb",
+    "borderStyle": "2rpx solid #e8e8e8",
+    "list": [
+      {
+        "selectedIconPath": "images/home.png",
+        "iconPath": "images/home_1.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/publish.png",
+        "iconPath": "images/publish_1.png",
+        "pagePath": "pages/publish/index",
+        "text": "发布"
+      },
+      {
+        "selectedIconPath": "images/msg.png",
+        "iconPath": "images/msg_1.png",
+        "pagePath": "pages/msg/index",
+        "text": "消息"
+      },
+      {
+        "selectedIconPath": "images/user.png",
+        "iconPath": "images/user_1.png",
+        "pagePath": "pages/user/index",
+        "text": "我的"
+      }
+    ]
+  }
+}

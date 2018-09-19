@@ -1,0 +1,159 @@
+/**index.wxss**/
+page{
+  color:#333;
+  font-size:24rpx;
+}
+swiper,swiper image{
+  width:100%;
+  height:312rpx;
+}
+.menu{
+   display: flex;
+   flex-wrap: wrap;
+   padding-left:30rpx;
+   margin-top:40rpx;
+}
+.menu-view{
+  width:212rpx;
+  height:214rpx;
+  margin-right:20rpx;
+  border:2rpx solid #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.menu-view:last-child{
+  margin-right:0;
+}
+.menuicon{
+  width:88rpx;
+  height:88rpx;
+  margin:0 auto;
+  margin-top:20rpx;
+  margin-bottom:25rpx;
+}
+.menutext{
+  font-size:24rpx;
+  color:#333;
+  text-align:center;
+}
+.news-text,.union-text{
+	padding:0 30rpx;
+  margin-top:54rpx;
+}
+.news-title,.union-title{
+  font-size:30rpx;
+  color:#333;
+}
+.news-more,.union-more{
+  font-size:24rpx;
+  color:#666;
+  float:right;
+  margin-top:5rpx;
+}
+.newsicon{
+  width:144rpx;
+  height:100rpx;
+  margin-right:18rpx;
+  float:left;
+}
+.newstext{
+  width:240rpx;
+  font-size:26rpx;
+  color:#333;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space:normal;
+  float:left;
+  line-height:34rpx;
+}
+.app-2{
+  -webkit-transition:.3s all;
+  transition:.3s all;
+  padding:0 30rpx;
+}
+.app{
+  overflow-x: auto;
+  -webkit-overflow-scrolling:touch;
+}
+.news-list{
+  margin-top:26rpx;
+  white-space: nowrap
+}
+.news-item{
+	width:412rpx;
+  border:2rpx solid #f1f1f1;
+  display: inline-block;
+  margin-right:20rpx;
+  padding:20rpx;
+  line-height:1;
+  position: relative;
+}
+.newstimer{
+  vertical-align:middle;
+  position:absolute;
+  left:184rpx;
+  top:94rpx;
+}
+.newstimer image{
+  width:20rpx;
+  height:20rpx;
+  margin-right:14rpx;
+  vertical-align:middle;
+}
+.newstimer text{
+  font-size:22rpx;
+  vertical-align:middle;
+}
+.union-item{
+  padding-top:26rpx;
+  padding-left:30rpx;
+  padding-right:30rpx;
+  padding-bottom:26rpx;
+  border-bottom:2rpx solid #f1f1f1;
+  font-size:0;
+}
+.union-flex{
+  width:100%;
+  display: flex;
+  justify-content:space-between;
+}
+.union-dd{
+  font-size:28rpx;
+  margin-right:30rpx;
+  position:relative;
+  flex:1;
+}
+.unionImg{
+  width:190rpx;
+  height:130rpx;
+}
+.union-ddtext{
+  line-height:42rpx;
+  margin-top:5rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space:normal;
+  width:100%;
+}
+.uniontimer{
+  position:absolute;
+  vertical-align:middle;
+  left:0;
+  top:94rpx;
+}
+.uniontimer image{
+  width:20rpx;
+  height:20rpx;
+  margin-right:14rpx;
+  vertical-align:middle;
+}
+.uniontimer text{
+  font-size:22rpx;
+}

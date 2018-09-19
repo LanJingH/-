@@ -1,0 +1,28 @@
+<!--pages/login2/index.wxml-->
+<view class="container">
+	<view class="view-form">
+	    <view class='login'>
+	      <block>
+	          <image class="login-img" src="../../images/logo.png"></image>
+	          <text class="login-text">中能联盟互动平台</text>
+	      </block>
+	    </view>
+	    <!--公司-->
+	    <view class="input-view">
+	       <input class="input-text"  placeholder="请输入公司名称"  bindinput="companyInput" maxlength="30"/>
+	    </view>
+	    <!--账号-->
+	    <view class="input-view">
+	       <input class="input-text"  placeholder="请输入11位手机号码"  bindinput="phoneInput" type="number"/>
+	    </view>
+	    <!--验证码-->
+	    <view class="input-view">
+	        <input class="input-text"  placeholder="请输入验证码" bindinput="passwordInput" type="number"/>
+	        <button class='bind-btn' disabled='{{disabled}}'  bindtap="getVerificationCode"  style='background:#1674bb;color:#fff'>{{time}}</button>
+	    </view>
+	    <!-- 按钮 -->
+	    <view class="login-btn-view">
+	    	<button class="login-btn"  bindtap="login">绑  定</button>
+	    </view>
+	</view>
+</view>

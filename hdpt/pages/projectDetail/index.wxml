@@ -1,0 +1,32 @@
+<!--pages/peojectDetail/index.wxml-->
+<import src="../../utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="line"></view>
+<view class="project-title">基本信息</view>
+<view class="inform">
+	<view class="detail-title inform-item">{{_projectName}}</view>
+	<view class="detail-name inform-item"><text class="inform-text">行业需求</text>：<text>{{_requirement}}</text></view>
+	<view class="detail-person inform-item"><text class="inform-text2" decode="{{true}}" space="{{true}}" >发&nbsp;&nbsp;布&nbsp;&nbsp;人</text>：<text>{{_pubName}}</text></view>
+  <view class="detail-person inform-item"><text class="inform-text2" decode="{{true}}" space="{{true}}" >联&nbsp;&nbsp;系&nbsp;&nbsp;人</text>：<text>{{_contactMan}}</text></view>
+	<view class="detail-tel inform-item"><text class="inform-text">联系电话</text>：<text>{{_tel}}</text></view>
+	<view class="detail-email inform-item"><text class="inform-text">联系邮箱</text>：<text>{{_email}}</text></view>
+	<view class="detail-timer inform-item"><text class="inform-text">发布时间</text>：<text>{{_pubDateStr}}</text></view>
+</view>
+<view>
+	<view class="project-title">需求描述</view>
+	<view class="wxParse description">
+	    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+	</view>
+</view>
+<view>
+	<view class="project-title">项目资料</view>
+	<view class="attch-box">
+		<block wx:for="{{attchList}}" wx:key="key">
+			<view class="attch-item"><text>{{item._name}}</text><text class="loadFiled" data-urls="{{item._url}}" bindtap="loadFiled">下载</text></view>
+		</block>
+	</view>
+</view>
+<view class="atttion-btn-view">
+	<button class="atttion-btn {{atttion?'bg':''}}"  disabled='{{disabled}}'  bindtap="atttionFocus">{{atttiontext}}</button>
+</view>

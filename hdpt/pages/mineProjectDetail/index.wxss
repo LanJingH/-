@@ -1,0 +1,83 @@
+/* pages/mineProjectDetail/index.wxss */
+@import "../../wxParse/wxParse.wxss";
+@import "../../style/style.wxss";
+page{
+  color:#333;
+  font-size:24rpx;
+  line-height:1;
+  background:#f5f5f5;
+}
+.project-title{
+	line-height:80rpx;
+	text-align:center;
+	font-size:26rpx;
+	color:#666;
+}
+.inform{
+	background:#fff;
+	padding:38rpx 30rpx 36rpx 30rpx;
+}
+.inform-item{
+	line-height:43rpx;
+	font-size:24rpx;
+	color:#666;
+}
+.detail-title{
+	padding-bottom:20rpx;
+	font-size:28rpx;
+	color:#333;
+	line-height:1;
+}
+.description{
+	padding:38rpx 30rpx 46rpx;
+	background:#fff;
+	line-height:40rpx;
+	color:#333;
+	font-size:28rpx;
+}
+.attch-box{
+	padding:28rpx 30rpx 36rpx;
+	background:#fff;
+	margin-bottom:89rpx;
+}
+.attch-item{
+	line-height:48rpx;
+	display:flex;
+    justify-content:space-between
+}
+.loadFiled{
+	color:#1674bb;
+}
+.atttion-btn-view{
+  position: fixed;
+  bottom:0;
+  width:100%;
+  border-top:1px solid #e8e8e8;
+}
+button{
+ background:#fff;
+ color:#1574bb;
+ border-radius:0;
+}
+.button-hover {
+  background-color: #fff;
+}
+button::after {
+  border: 0;
+}
+.bg{
+	background:#ccc;
+    color:#333;
+}
+.wxParse-inline,.wxParse-span,.wxParse-p,.wxParse-strong,text{
+  font-size:24rpx!important;
+}
+.inform-text{
+  width:104rpx;
+  display: inline-block;
+  letter-spacing: 2rpx;
+}
+.inform-text2{
+  width:104rpx;
+  display: inline-block;
+}

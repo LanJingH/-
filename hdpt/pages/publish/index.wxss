@@ -1,0 +1,79 @@
+/* pages/publish/index.wxss */
+page{
+  color:#333;
+  font-size:24rpx;
+  line-height:1;
+  background:#f5f5f5;
+}
+.demand{
+	display:flex;
+	font-size:28rpx;
+	border-bottom:2rpx solid #f1f1f1;
+  background: #fff;
+}
+.damand-text{
+	width:194rpx;
+	line-height:90rpx;
+	padding-left:30rpx;
+}
+.demand input{
+	height:64rpx;
+	margin:13rpx 0;
+	border-left:2rpx solid #e8e8e8;
+	padding-left:38rpx;
+}
+.describe{
+  background:#fff;
+  margin:20rpx 0;
+}
+.damand-text1{
+	line-height:86rpx;
+  font-size:28rpx;
+}
+.damand-textarea{
+	height:224rpx;
+	padding-left:60rpx;
+}
+.material{
+  height:326rpx;
+  background:#fff;
+}
+.atttion-btn-view{
+  width:70%;
+  margin:53rpx auto;
+}
+button{
+ background:#1574bb;
+ color:#fff;
+ border-radius:10rpx;
+}
+.button-hover {
+  background-color: #1574bb;
+  color:#fff;
+}
+.bg{
+  background: #b2b2b2;
+  color:#000;
+}
+.line{
+	 width:100%;
+	 height:2rpx;
+	 background:#e8e8e8;
+	 position:fixed;
+	 top:0;
+	 left:0;
+}
+.upload-input,.uploader-img{
+	width:150rpx;
+	height:150rpx;
+}
+.uploader-files,.uploader-box{
+	float:left;
+}
+.uploader-box{
+	padding-left:30rpx;
+}
+.uploader-item{
+	padding-left:30rpx;
+	float:left;
+}

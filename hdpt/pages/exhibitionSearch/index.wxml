@@ -1,0 +1,27 @@
+<!--pages/exhibitionSearch/index.wxml-->
+<import src="../../utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<view class="line"></view>
+<view class="con">
+   <view class="search-left">
+      <input type='text' class="search-input" placeholder='公司名称' bindinput="listenName" focus='ture'></input>
+      <icon  type="search" size="14" color="#999" class="search-icon"/>
+   </view>
+   <text class="search-text" bindtap="listenSearch">搜索</text>
+</view>
+<view>
+      <block wx:for="{{exhibitionData}}" wx:key="index">
+          <view class="exhibition-item" bindtap='jumpPages' data-textid="{{item.code}}">
+              	<view><image class="exhibitionImg" src="{{item.img}}"></image></view>
+              	<view class="exhibition-text">
+              		<view class="exhibition-big"><text>{{item.title}}</text></view>
+              		<view class="exhibition-small"><text>{{item.typeName}}</text></view>
+              		<view class="exhibition-small app"><text>{{item.richTitle}}</text></view>
+              	</view>
+          </view>
+      </block>
+</view>
+<view class="black-page {{attion?'bg_2':''}}">
+  <image src="../../images/no_data.png"></image>
+  <view><text>亲 暂时没有消息呦~</text></view>
+</view>

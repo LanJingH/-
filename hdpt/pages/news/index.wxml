@@ -1,0 +1,17 @@
+<!--pages/news/index.wxml-->
+<import src="../../utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<view class="line"></view>
+<view class="union">
+      <block wx:for="{{newsdata}}" wx:key="key">
+           <view class="news-item" bindtap='jumpPages' data-textid="{{item.code}}">
+              <view class="news-flex">
+                  <view><image class="newsImg" src="{{item.newsimg}}"></image></view>
+                  <view class="news-dd">
+                    <text class="news-ddtext">{{item.newstext}}</text>
+                    <view class="newstimer"><image src="../../images/clock.png"></image><text>{{item.timer}}</text></view>
+                  </view>
+              </view>
+          </view>
+      </block>
+ </view>

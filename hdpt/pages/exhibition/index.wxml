@@ -1,0 +1,34 @@
+<!--pages/exhibition/index.wxml-->
+<import src="../../utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<view class="page-header">
+    <view class='page-search' bindtap="jumpSearch"> 
+      <icon type="search" size="14" color="#999" class="search-icon"/>
+      <text>公司名称</text>
+    </view>
+    <view bindtap='jumpFilter'>
+        <text>筛选</text>
+        <image src="../../images/filter.png" class="filter-icon"></image>
+    </view>
+</view>
+<view class="line2"></view>
+<view class="con">
+      <block wx:for="{{exhibitionData}}" wx:key="key">
+          <view class="exhibition-item" bindtap='jumpPages' data-textid="{{item.code}}">
+              	<view><image class="exhibitionImg" src="{{item.img}}"></image></view>
+              	<view class="exhibition-text">
+              		<view class="exhibition-big"><text>{{item.title}}</text></view>
+              		<view class="exhibition-small"><text>{{item.typeName}}</text></view>
+              		<view class="exhibition-small app"><text>{{item.richTitle}}</text></view>
+              	</view>
+          </view>
+      </block>
+      <!-- <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+      		    <view class="weui-loading"></view>
+      		    <view class="weui-loadmore__tips">加载中</view>
+       	  </view> -->
+</view>
+<view class="black-page {{attion?'bg_2':''}}">
+  <image src="../../images/no_data.png"></image>
+  <view><text>亲 暂时没有数据呦~</text></view>
+</view>

@@ -1,0 +1,37 @@
+<!--pages/projectList/index.wxml-->
+<import src="../../utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<view class="fix-box">
+  <view class="menu-title">
+    <label bindtap='change_img' class="bg_img">时间<image src="{{url}}" class="bg_bot {{atttion?'rotateRight':''}}"></image></label>
+    <label bindtap="powerDrawer" class="{{preparat?'bg_img':''}}">行业<image src="{{urls}}" class="bg_bot"></image></label>
+  </view>
+  <view class='line2'></view>
+</view>
+<view class="project-list">
+	 <block wx:for="{{projectList}}" wx:key="key">
+		<view class="project-item" bindtap='jumpPages' data-textid="{{item.code}}">
+			<view class="project-name"><text class='content-1'>{{item.name}}</text><text class="project-time">{{item.timer}}</text></view>
+			<view class="person"><text decode="{{true}}" space="{{true}}" class='perosn-text2'>发&nbsp;&nbsp;布&nbsp;&nbsp;人</text>：<text>{{item.person}}</text></view>
+			<view class="project-type"><text class='perosn-text'>项目类型</text>：<text>{{item.projectType}}</text></view>
+		</view>
+	</block>
+</view>
+<!-- mask -->
+<view class="drawer_screen" bindtap="powerDrawer" wx:if="{{showModalStatus}}" catchtouchmove='preventTouchMove' ></view>
+<!--content-->
+<!--使用animation属性指定需要执行的动画-->
+<view animation="{{animationData}}" class="drawer_attr_box" wx:if="{{showModalStatus}}">
+  <!--drawer content-->
+  <view class="drawer_content">
+	  	<block wx:for="{{preparatList}}" wx:key="key">
+	    	<view class="drawer_title {{item.select==catalog?'selected':''}}"  data-select='{{item.select}}'  data-name="{{ item.txt }}" bindtap="closeMenu">{{ item.txt }}</view>
+	    </block>
+  </view>
+</view>
+
+<view class="black-page {{attion?'bg_2':''}}">
+  <image src="../../images/no_data.png"></image>
+  <view><text>亲 暂时没有消息呦~</text></view>
+</view>
+

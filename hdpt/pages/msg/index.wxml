@@ -1,0 +1,22 @@
+<import src="../../utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<view class="line"></view>
+<view class="nav_2">
+  <text class="left-item {{atttion?'':'bg_2'}}"  data-textid="2" bindtap='changeBg'>联盟通知</text>
+  <text class="right-item {{atttion?'bg_2':''}}" data-textid="1" bindtap='changeBg'>系统通知</text>
+</view>
+<view class="msg-list">
+	<block wx:for="{{msgAry}}" wx:key="key">
+	    <view class="msg-item">
+	        <image class="item-img" src="../../images/msg_icon.png"></image>
+	        <view class="item-text">
+	            <view class="item-top"><text class="item-title">{{item.msg_title}}</text><text class="item-timer">{{item.send_date}}</text></view>
+	            <text class="item-pp">{{item.msg_text}}</text>
+	        </view>
+	    </view>
+    </block>
+</view>
+<view class="black-page" wx:if="{{msgAry.length==0}}">
+	<image src="../../images/no_data.png"></image>
+	<view><text>亲 暂时没有消息呦~</text></view>
+</view>

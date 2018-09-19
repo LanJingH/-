@@ -1,0 +1,39 @@
+/* pages/mineActivity/index.wxss */
+@import "../../style/style.wxss";
+page{
+  color:#333;
+  font-size:24rpx;
+  line-height:1;
+}
+.activity{
+  padding:0 30rpx;
+  background:#fff;
+}
+.activity-item{
+  padding-top:26rpx;
+  padding-bottom:32rpx;
+  border-bottom:2rpx solid #f1f1f1;
+  display: flex;
+}
+.activityImg{
+  width:200rpx;
+  height:134rpx;
+  margin-right:30rpx;
+}
+.activity-big{
+  font-size:28rpx;
+  margin-top:8rpx;
+}
+.app1{
+  margin-top:24rpx;
+  margin-bottom: 18rpx;
+}
+.app1 text{
+  color:#1674bb;
+}
+.bg{
+  color:#666;
+}
+.app3{
+  flex:1;
+}

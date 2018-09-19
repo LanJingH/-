@@ -1,0 +1,62 @@
+/* pages/user/index.wxss */
+page{
+  color:#333;
+  font-size:28rpx;
+  line-height:1;
+  background:#f5f5f5;
+}
+.banner_bg{
+	width:100%;
+	height:280rpx;
+}
+.user-img{
+	position:relative;
+	background:#fff;
+}
+.pos-img{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	text-align:center;
+	padding-top:48rpx;
+	color:#fff;
+}
+.user-imgs{
+  width:138rpx;
+  height:138rpx;
+  border-radius:0;
+	margin-bottom:18rpx;
+}
+.user-list{
+  display:flex;
+  justify-content:space-between;
+  padding:0 30rpx;
+  background:#fff;
+  height:90rpx;
+  line-height:90rpx;
+  border-bottom:2rpx solid #f1f1f1;
+}
+.user-item1 image,.user-item2 image{
+	vertical-align:middle;
+}
+.user-item1 text,.user-item2 text{
+	vertical-align:middle;
+}
+.user-item1 image{
+	margin-right:26rpx;
+}
+.user-item2 image{
+	margin-left:40rpx;
+}
+.user-item3 text{
+	color:#1674bb;
+}
+.list-icon{
+	width:32rpx;
+	height:32rpx;
+}
+.list-arrow{
+	width:17rpx;
+	height:31rpx;
+}

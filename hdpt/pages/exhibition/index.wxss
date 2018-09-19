@@ -1,0 +1,93 @@
+/* pages/exhibition/index.wxss */
+@import "../../style/style.wxss";
+.con{
+  font-size:24rpx;
+  line-height:1;
+  color:#333;
+}
+.exhibition-item{
+  padding-top:40rpx;
+  padding-left:30rpx;
+  padding-right:40rpx;
+  padding-bottom:27rpx;
+  border-bottom:2rpx solid #f1f1f1;
+  display: flex;
+}
+.exhibitionImg{
+  width:100rpx;
+  height:100rpx;
+  margin-right:40rpx;
+}
+.exhibition-item text{
+  font-size:24rpx;
+  color:#333;
+}
+.exhibition-big{
+  margin-bottom:16rpx;
+}
+.exhibition-big text{
+  font-size:28rpx;
+}
+.exhibition-small{
+  line-height:40rpx;
+}
+.app text{
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space:normal;
+}
+.exhibition-small text{
+  color:#666;
+}
+.page-header{
+  display: -webkit-flex;
+  padding:0 30rpx;
+  font-size:30rpx;
+  line-height:66rpx;
+}
+.page-search{
+  color:#999;
+  flex:1;
+  height:66rpx;
+  background: #ededed;
+  border-radius:10rpx;
+  text-align:center;
+  margin-right:30rpx;
+}
+.search-icon{
+  margin-right:30rpx;
+}
+.filter-icon{
+  width:24rpx;
+  height:24rpx;
+  margin-left:14rpx;
+}
+.exhibition-text{
+  flex:1;
+}
+.line2{
+   width:100%;
+   height:2rpx;
+   background:#e8e8e8;
+   margin-top:12rpx;
+}
+.black-page{
+  text-align:center;
+  margin-top:280rpx;
+}
+.black-page image{
+  width:148rpx;
+  height:172rpx;
+  margin-bottom:54rpx;
+}
+.black-page text{
+  font-size:28rpx;
+  color:#999;
+  
+}
+.bg_2{
+  display: none;
+}

@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<import src="../../utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<view class="con">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="rgba(255, 255, 255, .5)"  indicator-active-color="#fff" circular="{{circular}}">
+    <block wx:for="{{imgUrls}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="menu">
+      <block wx:for="{{menudata}}" wx:key="key">
+          <view class="menu-view" id="{{item.menuname}}" bindtap="jumpPages">
+              <image  class="menuicon" src="{{item.menuimg}}"></image>
+              <text class="menutext">{{item.menutext}}</text>
+          </view>
+      </block>
+  </view>
+  <view class="news">
+      <view class="news-text">
+          <text class="news-title">行业动态</text>
+          <text class="news-more" id="news-more" bindtap="jumpPages">更多</text>
+      </view>
+      <view class='app-2'>
+        <view class='app'>
+          <view class="news-list">
+               <block wx:for="{{newsdata}}" wx:key="key">
+                  <view class="news-item" bindtap='newsDetails' data-textid="{{item.code}}">
+                    <image class="newsicon" src="{{item.unionimg}}"></image>
+                        <text class="newstext">{{item.uniontext}}</text>
+                        <view class="newstimer"><image src="../../images/clock.png"></image><text>{{item.timer}}</text></view>
+                  </view>
+              </block>
+          </view>
+        </view>
+      </view>
+  </view>
+  <view class="union">
+      <view class="union-text">
+          <text class="union-title">联盟动态</text>
+          <text class="union-more" id="union-more" bindtap="jumpPages">更多</text>
+      </view>
+      <block wx:for="{{uniondata}}" wx:key="key">
+          <view class="union-item" bindtap='unionDetails' data-textid="{{item.code}}">
+              <view class="union-flex">
+                  <view class="union-dd">
+                    <text class="union-ddtext">{{item.uniontext}}</text>
+                    <view class="uniontimer"><image src="../../images/clock.png"></image><text>{{item.timer}}</text></view>
+                  </view>
+                  <view><image class="unionImg" src="{{item.unionimg}}"></image></view>
+              </view>
+          </view>
+      </block>
+  </view>
+</view>
+ 
+ 
+  
+  
+  
+ 
+  
+ 

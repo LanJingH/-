@@ -1,0 +1,22 @@
+<!--utils/pageState/index.wxml-->
+<template name="pageState">
+  <view class="page-state-container" wx:if="{{state != 'finish'}}">
+    <view class="page-state-empty page-state-center" wx:if="{{state == 'empty'}}">
+     <!--  <image src="../../images/no_data.png"></image>
+     <view><text>亲 暂无提交的项目呦~</text></view> -->
+     <!-- <icon type="info" size="70" />
+     <view class="message">{{message}}</view> -->
+       <image src="../../images/no_data.png"></image>
+       <view><text>{{message}}</text></view>
+    </view>
+    <view class="page-state-loading page-state-center" wx:if="{{state == 'loading'}}">
+      <icon type="waiting" size="70" />
+      <view class="message">{{message}}</view>
+    </view>
+    <view class="page-state-error page-state-center" wx:if="{{state == 'error'}}">
+      <icon type="warn" size="70" />
+      <view class="message message-error">{{message}}</view>
+      <button class="retrybtn" type="warn" catchtap="onRetry">重新加载</button>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,39 @@
+<import src="../../utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<view>
+	<view class="user-img">
+		<image src="../../images/mine_banner.png" class="banner_bg"></image>
+		<view class="pos-img">
+			<image src="{{_imgUrl}}" class="user-imgs" mode="aspectFit"></image>
+			<view><text>公司 : {{_companyAlias}}</text></view>
+		</view>
+	</view>
+	<view class="user-list" bindtap="jumpPage">
+		  <view class="user-item1"><image src="../../images/user_icon_1.png" class="list-icon"></image><text class="list-text">积分</text></view>
+		  <view class="user-item2"><text>{{_pointsSum}}</text><image src="../../images/arrow_right.png" class="list-arrow"></image></view>
+	</view>
+	<view class="user-list" bindtap="jumpPage2">
+		  <view class="user-item1"><image src="../../images/user_icon_2.png" class="list-icon"></image><text class="list-text">我的项目/需求</text></view>
+		  <view class="user-item2"><image src="../../images/arrow_right.png" class="list-arrow"></image></view>
+	</view>
+	<!-- <view class="user-list" bindtap="jumpPage3">
+		  <view class="user-item1"><image src="../../images/user_icon_3.png" class="list-icon"></image><text class="list-text">收藏关注</text></view>
+		  <view class="user-item2"><image src="../../images/arrow_right.png" class="list-arrow"></image></view>
+	</view> -->
+	<view class="user-list" bindtap="jumpPage5">
+		  <view class="user-item1"><image src="../../images/user_icon_3.png" class="list-icon"></image><text class="list-text">关注的项目</text></view>
+		  <view class="user-item2"><image src="../../images/arrow_right.png" class="list-arrow"></image></view>
+	</view>
+	<view class="user-list" bindtap="jumpPage6">
+		  <view class="user-item1"><image src="../../images/user_icon_4.png" class="list-icon"></image><text class="list-text">关注的公司</text></view>
+		  <view class="user-item2"><image src="../../images/arrow_right.png" class="list-arrow"></image></view>
+	</view>
+	<view class="user-list" bindtap="jumpPage4">
+		  <view class="user-item1"><image src="../../images/user_icon_6.png" class="list-icon"></image><text class="list-text">我的活动</text></view>
+		  <view class="user-item2"><image src="../../images/arrow_right.png" class="list-arrow"></image></view>
+	</view>
+	<view class="user-list">
+		  <view class="user-item1"><image src="../../images/user_icon_5.png" class="list-icon"></image><text class="list-text">联系我们</text></view>
+		  <view class="user-item3"><label><text>010-51208668</text></label></view>
+	</view>
+</view>

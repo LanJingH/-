@@ -1,0 +1,47 @@
+/* utils/pageState/index.wxss */
+.page-state-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.page-state-container {
+  animation: fadein 2s 1 ease-out;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+
+.page-state-container~view {
+  display: none;
+}
+
+page {
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* 空页面*/
+.page-state-empty image{
+  width:148rpx;
+  height:172rpx;
+  margin-bottom:54rpx;
+}
+.page-state-empty text{
+  font-size:28rpx;
+  color:#999; 
+}
+
+/* 没有网络 */
+.message-error{
+  margin:54rpx 0;
+  font-size:24rpx;
+  overflow:hidden;
+}
+.retrybtn{
+  font-size:24rpx;
+}

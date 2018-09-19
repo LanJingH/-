@@ -1,0 +1,24 @@
+<!--pages/IntegralRecord/index.wxml-->
+<import src="../../utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<view class="line"></view>
+<view class="box">
+  <view class="record-titles">
+        <view class="record-title"><text>我的积分</text></view>
+        <view class="record-num"><text class="record-count">{{record_count}}</text><text class="record-weight">积分</text></view>
+  </view>
+</view>
+<view class="record-header"><text>积分获取记录</text></view>
+<view class="record-list">
+      <block wx:for="{{recordList}}" wx:key="key">
+             <view class="record-item">
+            <view class="item-left">
+                  <text class="left-text">{{item._pointTypeName}}</text>
+                  <view class="left-timer"><text>{{item._createDateStr}}</text></view>
+            </view>
+            <view class="item-right">
+                  <text>+{{item._points}}积分</text>
+            </view>
+         </view>
+      </block>
+</view>

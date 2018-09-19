@@ -1,0 +1,28 @@
+<import src="../../utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<view>
+   <view class="line"></view>
+   <view class="demand"><text class="damand-text">项目/需求</text> <input  type="text" maxlength="15" placeholder="请输入需求名称"  value="{{demandtext}}" bindinput="listenDemand" focus='{{name_focus_1}}'/></view>
+   <view class="demand"><text class="damand-text">联 系 人</text> <input  type="text" maxlength="15" placeholder="请输入联系人" value="{{person}}" bindinput="listenPerosn" focus='{{name_focus_2}}'/></view>
+   <view class="demand"><text class="damand-text">联系方式</text> <input  type="number" maxlength="15" placeholder="请输入联系方式" value="{{contactWay}}" bindinput="listenContactWay" bindblur="blurContactWay" focus='{{name_focus_3}}'/></view>
+   <view class="describe">
+   		<text class="damand-text damand-text1">项目/需求描述</text>
+   		<textarea placeholder="请输入需求描述(500字以内)" class="damand-textarea" maxlength="500" value="{{describe}}" bindinput="listenDescribe" focus='{{name_focus_4}}'></textarea>
+   </view>
+   <!-- <view class="material">
+       <text class="damand-text damand-text1">项目/需求资料(选填)</text>
+        <view>
+            <view class="uploader-files">
+                  <block wx:for="{{imageList}}" wx:key="key">
+                      <view class="uploader-item"><image class="uploader-img" src="{{item}}" data-src="{{item}}"></image></view>
+                  </block>
+            </view>
+            <view class="uploader-box" >
+                 <image class="upload-input" bindtap="bindChooiceProduct" src="../../images/uploader.png"></image>
+             </view>
+        </view>
+   </view> -->
+   <view class="atttion-btn-view">
+		<button class="atttion-btn {{atttion?'bg':''}}"  disabled='{{disabled}}'  bindtap="listenerButton">提交</button>
+	</view>
+</view>

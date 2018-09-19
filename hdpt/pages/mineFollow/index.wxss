@@ -1,0 +1,17 @@
+/* pages/mineFollow/index.wxss */
+@import "../../style/style.wxss";
+.user-list{
+	line-height:90rpx;
+	height:90rpx;
+	padding:0 30rpx;
+	font-size:28rpx;
+	color:#333;
+	border-bottom:2rpx solid #f1f1f1;
+	display:flex;
+  justify-content:space-between;
+}
+
+.list-arrow{
+	width:17rpx;
+	height:31rpx;
+}

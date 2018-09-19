@@ -1,0 +1,30 @@
+<!--pages/exhibitionFilter/index.wxml-->
+<import src="../../utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<view class="line"></view>
+<view class="con">
+      <view class="filter-title"><text >会员类别</text></view>
+      <view class="filter-list">
+          <block wx:for="{{rankAry}}" wx:key="index">
+            <view id="{{index}}" bindtap="listenfilter" class="{{item.state==1?'bg':''}} filter-box" data-key='{{index}}' data-textId='{{item.code}}'>
+                <block>
+                      <text class="bg">{{item.name}}</text>
+                </block>
+            </view>
+          </block>
+      </view>
+      <view class="filter-title2"><text >行业</text></view>
+      <view class="filter-list">
+          <block wx:for="{{vocationAry}}" wx:key="index">
+            <view id="{{index}}" bindtap="listenfilter2" class="{{item.state==1?'bg':''}} filter-box" data-key='{{index}}' data-textId='{{item.name}}'>
+                <block>
+                      <text class="bg">{{item.name}}</text>
+                </block>
+            </view>
+          </block>
+      </view>
+</view>
+<view class="atttion-btn-view">
+    <button class="atttion-btn" bindtap="clearData">重置</button>
+    <button class="atttion-btn confirm-btn" bindtap="conBtn">确定</button>
+</view>

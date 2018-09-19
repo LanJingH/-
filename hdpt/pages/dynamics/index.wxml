@@ -1,0 +1,17 @@
+<!--pages/dynamics/index.wxml-->
+<import src="../../utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<view class="line"></view>
+<view class="union">
+      <block wx:for="{{uniondata}}" wx:key="key">
+           <view class="union-item" bindtap='jumpPages' data-textid="{{item.code}}">
+              <view class="union-flex">
+                  <view><image class="unionImg" src="{{item.unionimg}}"></image></view>
+                  <view class="union-dd">
+                    <text class="union-ddtext">{{item.uniontext}}</text>
+                    <view class="uniontimer"><image src="../../images/clock.png"></image><text>{{item.timer}}</text></view>
+                  </view>
+              </view>
+          </view>
+      </block>
+ </view>

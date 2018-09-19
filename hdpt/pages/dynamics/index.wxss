@@ -1,0 +1,54 @@
+/* pages/dynamics/index.wxss */
+@import "../../style/style.wxss";
+page{
+  line-height:1;
+}
+.union-item{
+  padding-top:26rpx;
+  padding-left:30rpx;
+  padding-right:30rpx;
+  padding-bottom:26rpx;
+  border-bottom:2rpx solid #f1f1f1;
+  font-size:0;
+}
+.union-flex{
+  width:100%;
+  display: flex;
+}
+.union-dd{
+  font-size:28rpx;
+  position:relative;
+  margin-left:30rpx;
+  flex:1;
+}
+.unionImg{
+  width:190rpx;
+  height:130rpx;
+}
+
+.union-ddtext{
+  line-height:42rpx;
+  margin-top:5rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space:normal;
+  width:100%;
+}
+.uniontimer{
+  position:absolute;
+  left:0;
+  top:94rpx;
+  vertical-align:middle;
+}
+.uniontimer image{
+  width:20rpx;
+  height:20rpx;
+  margin-right:14rpx;
+  vertical-align:middle;
+}
+.uniontimer text{
+  font-size:22rpx;
+}
